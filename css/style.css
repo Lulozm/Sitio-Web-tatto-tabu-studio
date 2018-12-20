@@ -1,0 +1,601 @@
+ *{
+	 margin:0;
+	 padding:0;
+	 box-sizing: border-box;
+ }
+ body{
+	
+	
+ }
+ 
+ header{
+	 width:100%;
+	 height:680px;
+	 overflow:hidden;
+	 position:relative;
+ }
+ .contenedor{
+	width:100%;
+	max-width:auto;
+	overflow:hidden;
+ }
+ /*-------------------------------------------------------------*/
+ #menu{
+	 font-size: 1.2rem;
+	background-color: rgba( 30, 58,70,.8);
+	width: 100%;
+	text-align: center;
+	position: fixed;
+	top:0px;
+	z-index:2;
+ }
+ .opcion{
+	display: inline-block;
+	text-decoration: none;
+	color: white;
+	padding: 10px 50px;
+	
+}
+ .opcion:hover{
+background-color:rgba(255, 255, 255, .4);
+
+}
+
+.titulo{
+	color:#fff;
+	z-index:1;
+	position:absolute;
+	left:29%;
+	top:40%;
+	font-size:7rem;
+	font-family:CFKlondikePERSONAL-Regular;
+	animation: Logo 2s linear 1;
+}
+.logotipo{
+	position:relative;
+	height:4%;
+	width:5%;
+	left:-200px;
+	top:5px;
+}
+.slider{
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+}
+
+	.slide{
+		position:absolute;
+		top:0px;
+		left:0px;
+		width:100%;
+		height:700px;
+}
+
+	.slide:nth-child(1){
+		background-image:url(../imagenes/f1.jpeg);
+		background-repeat:no-repeat;
+		background-size:cover;
+		background-attachment:fixed;
+		animation:emulador1 20s infinite;
+}	
+	
+	.slide:nth-child(2){
+		background:url(../imagenes/f2.jpg) no-repeat fixed;
+		background-size:cover;
+		animation:emulador2 20s infinite;
+}
+
+	.slide:nth-child(3){
+		background:url(../imagenes/f3.jpg) no-repeat fixed;
+		background-size:cover;
+		animation:emulador3 20s infinite;
+}
+
+	.slide:nth-child(4){
+		background:url(../imagenes/f4.jpg) no-repeat fixed; /*No-repeat sirve para evitar el mosaico, fixed lo mantiene fija aún haciendo scroll*/
+		background-size:cover;
+		animation:emulador4 20s infinite;	/*Nombre, duración, repetición*/
+	}
+
+#bienvenido{
+	background:#131313;
+	width:100%;
+	color:#fff;
+	overflow:hidden;
+}
+#bienvenido h1{
+	top:50px;
+	left:30%;
+	position:relative;
+	text-align:center;
+}
+.bienvenido p {
+	width:30%;
+	height:auto;
+	position:relative;
+	top:200px;
+	left:65%;
+	color:#fff;
+	font-size:1.3rem;
+}
+.imgbienvenidos{
+	position:relative;
+	top:-20px;
+	width:60%;
+	left:2%;
+	height:450px;
+	border-radius:10px;
+	box-shadow:0px 0px 25px #fff
+}
+#servicio{
+	background:#3a3a3a;
+	width:100%;
+	position:relative;
+	padding:10px 0px;
+}
+#servicio h1{
+	position:relative;
+	top:50px;
+	text-align:center;
+	color:#fff;
+}
+.servicio{
+	width:100%;
+	height:200px;
+	position:relative;
+	top:60px;
+	left:30%;
+	color:#fff;
+	font-size:1.3rem;
+
+	
+}
+.servicioimg{
+	position:relative;
+	top:0px;
+	height:400px;
+	width:300px;
+	display:inline-block;
+	
+	margin-left:10%;
+}
+.servicioimg:hover{
+	transform:scale(1.3);
+}
+
+.servicioimg{
+	transition: all .4s ease-in-out;
+}
+#video{
+	position:relative;
+	width:100%;
+	background:#131313;
+}
+.videos{
+	display:inline-block;
+	width:50%;
+	top:20px;
+	left:2%;
+	border:#fff solid;
+}
+.video2{
+	position:relative;
+	display:inline-block;
+	left:5%;
+	top:0px;
+	font-size:1.8rem;
+	color:#fff;
+}
+#galeria{
+	background:#3a3a3a;
+	width:100%;
+	position:relative;
+	padding:10px 0px;
+}
+.diseño{
+	top:50px;
+	position:relative;
+	text-align:center;
+	color:#fff;
+	font-size:4rem;
+}
+.galeriaimg{
+	position:relative;
+	height:400px;
+	width:300px;
+	margin-left:50px;
+	margin-top:50px;
+	top:20%;
+	border:solid #fff;
+	display:inline-block;
+}
+.galeriaimg:hover{
+	transform: scale(.9);
+}
+#grupo{
+background:#131313;
+	width:100%;
+	position:relative;
+	padding:10px 0px;	
+}
+.tatuadore{
+	position:relative;
+	font-size:3rem;
+	text-align:center;
+	top:50px;
+	color:#fff;
+}
+
+.trabajadores{
+	position:relative;
+	height:400px;
+	width:300px;
+	top:60px;
+	margin-left:20%;
+	display:inline-block;
+}
+.trabajador{
+	position:relative;
+	height:400px;
+	width:300px;
+	top:20px;
+	margin-left:20%;
+	display:inline-block;
+	color:#fff;
+	font-size:2rem;
+}
+	
+#localizacion{
+	background:#3a3a3a;
+	width:100%;
+	position:relative;
+	padding:10px 0px;	
+}
+.local{
+	color:#fff;
+	top:60px;
+	left:0%;
+	position:relative;
+	text-align:center;
+	font-size:2rem;
+}
+.mapa{
+	position:relative;
+	margin:90px 40px;
+}
+.local2{
+	color:#fff;
+	font-size:2rem;
+	position:relative;
+	top:5%;
+}
+.local3{
+	color:#fff;
+	position:relative;
+	top:10%;
+	
+}
+footer{
+	background:#000;
+	width:100%;
+	height:100px;
+	padding-left:10%;
+	
+}
+
+@keyframes  Logo{
+	from{
+		top:40%;
+		opacity:0;
+	}
+	
+	to{
+		top:40%;
+		opacity:1;
+		
+	}
+}
+
+@keyframes emulador1{ /*Nombre de la animación*/
+	0%, 100%{opacity:1;}  /*0% define el estilo inicial de la animación, puede haber valores intermedios*/
+	25%, 50%, 75%{opacity:0;}  /*100% define el estilo al final de la animación*/
+}
+
+@-webkit-keyframes emulador1{
+	0%, 100%{opacity:1;}
+	25%, 50%, 75%{opacity:0;}
+}
+
+
+@keyframes emulador2{ 
+	25%, 100%{opacity:1;}
+	0%, 50%, 75%, 100%{opacity:0;}
+}
+
+@-webkit-keyframes emulador2{
+	25%{opacity:1;}
+	0%, 50%, 75%, 100%{opacity:0;}
+}
+
+@keyframes emulador3{
+	50%{opacity:1;}
+	0%, 25%, 75%, 100%{opacity:0;}
+}
+
+@-webkit-keyframes emulador3{
+	50%{opacity:1;}
+	0%, 25%, 75%, 100%{opacity:0;}
+}
+
+@keyframes emulador4{
+	75%{opacity:1;}
+	0%, 25%, 50%, 100%{opacity:0;}
+}
+
+@-webkit-keyframes emulador4{
+	75%{opacity:1;}
+	0%, 25%, 50%, 100%{opacity:0;}
+}
+
+@keyframes mueveLogo{
+	from{
+		top:-100px;
+		opacity:0;
+	}
+	
+	to{
+		top:-80px;
+		opacity:1;
+	}
+}
+
+@media screen and (max-width: 1200px){
+	
+	#menu{
+	 font-size: 1.2rem;
+	background-color: rgba( 30, 58,70,.8);
+	width: 120px;
+	text-align: center;
+	position: fixed;
+	top:0px;
+	left:-110px;
+	z-index:2;
+	
+ }
+ #menu:hover{
+	 left:0%;
+ }
+ .opcion{
+	display:block;
+	padding:10px 0px;
+}
+	
+.servicioimg{
+	position:relative;
+	top:0px;
+	height:400px;
+	width:300px;
+	display:inline-block;
+	
+	margin-left:15%;
+}
+.servicioimg:hover{
+	transform:scale(1.3);
+}
+
+.servicioimg{
+	transition: all .4s ease-in-out;
+}
+
+
+.videos{
+	display:inline-block;
+	width:100%;
+	
+}
+.video2{
+	
+	display:inline-block;
+	
+}
+
+ .servicioimg{
+	display:inline-block;
+	
+	height:280px;
+	width:200px;
+
+	margin:20px auto;
+}
+	
+ 
+ .galeriaimg{
+	display:block;
+	height:380px;
+	width:400px;
+	margin:20px auto;
+}
+
+#grupo{
+	background:#3a3a3a;
+	width:100%;
+	height:auto;
+	padding:8%;	
+}
+.trabajadores{
+	display:block;
+	height:380px;
+	width:400px;
+	margin:20px auto;
+}
+.trabajador{
+	position:relative;
+	display:block;
+	top:0px;
+	left:0%;
+	font-size:2rem;
+}
+
+.local{
+	top:0px;
+	left:0%;
+	position:relative;
+	text-align:center;
+	font-size:2rem;
+}
+.mapa{
+	display:block;
+	margin-top:90px;
+	height:280px;
+	width:100%;
+	margin:20px auto;
+}
+.local2{
+	font-size:2rem;
+	position:relative;
+	top:5%;
+}
+.local3{
+	position:relative;
+	top:10%;
+	
+}
+.contenedor{
+	height:auto;
+	overflow:auto;
+}
+	
+}
+
+@media screen and (max-width: 800px){
+	
+	#menu{
+	 font-size: 1.2rem;
+	background-color: rgba( 30, 58,70,.8);
+	width: 120px;
+	text-align: center;
+	position: fixed;
+	top:0px;
+	left:-110px;
+	z-index:2;
+	
+ }
+ #menu:hover{
+	 left:0%;
+ }
+ .opcion{
+	display:block;
+	padding:10px 0px;
+}
+	
+#bienvenido h1{
+	top:50px;
+	left:0%;
+	position:relative;
+	text-align:center;
+}
+	
+ 
+ .imgbienvenidos{
+	position:relative;
+	top:-20px;
+	width:60%;
+	left:2%;
+	height:250px;
+	border-radius:10px;
+	box-shadow:0px 0px 25px #fff
+}
+
+.servicio{
+	width:80%;
+	height:auto;
+	position:relative;
+	top:0px;
+	left:10%;
+	color:#fff;
+	font-size:1.3rem;
+
+	
+}
+
+.videos{
+	display:inline-block;
+	width:100%;
+	
+}
+.video2{
+	
+	display:inline-block;
+	
+}
+
+ .servicioimg{
+	display:inline-block;
+	
+	height:280px;
+	width:200px;
+	
+	margin:20px auto;
+}
+	
+ 
+ .galeriaimg{
+	display:block;
+	height:380px;
+	width:400px;
+	margin:20px auto;
+}
+
+#grupo{
+	background:#3a3a3a;
+	width:100%;
+	height:auto;
+	padding:8%;	
+}
+.trabajadores{
+	display:block;
+	height:380px;
+	width:400px;
+	margin:20px auto;
+}
+.trabajador{
+	position:relative;
+	display:block;
+	top:0px;
+	left:0%;
+	font-size:2rem;
+}
+
+.local{
+	top:0px;
+	left:0%;
+	position:relative;
+	text-align:center;
+	font-size:2rem;
+}
+.mapa{
+	display:block;
+	margin-top:90px;
+	height:280px;
+	width:100%;
+	margin:20px auto;
+}
+.local2{
+	font-size:2rem;
+	position:relative;
+	top:5%;
+}
+.local3{
+	position:relative;
+	top:10%;
+	
+}
+.contenedor{
+	height:auto;
+	overflow:auto;
+}
+	
+}
+
